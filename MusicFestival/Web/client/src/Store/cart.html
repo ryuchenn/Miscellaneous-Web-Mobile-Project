@@ -1,0 +1,52 @@
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Music Festival</title>
+    <link rel="stylesheet" href="../styles.css"/>
+ </head>
+ <body>
+    <top-nav-bar></top-nav-bar>
+    <div id="Main_Frame">
+        <div id="Cart_Block1">
+            <form>
+                <div style="display: flex; justify-content: center; font-family: 'Fascinate Inline', system-ui; font-size: 70px; margin: 20px;">CART</div>
+                <p class="Cart_p">Choose your ticket type:</p>
+                <div class="form_group">
+                    <label>
+                        <input type="radio" name="ticket" value="1" id="BtnTicket">One Day Pass ($200)</input>
+                    </label>
+                    <label>
+                        <input type="radio" name="ticket" value="2" id="BtnTicket">All Day PASS ($510)</input>
+                    </label>
+                </div>
+                <p class="Cart_p">Choose quantity:</p>
+                <select id="CartQuantity" name="CartQuantity" class="form_control">
+                    <option value="1" selected>1</option> <!-- Default Setting -->
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <p class="Cart_p">Coupon Code</p>
+                <input id="InCoupon" class="input_field" placeholder="Enter promotion Code"></input>
+                
+                <p class="Cart_p" id="Cart_Total"></p>
+                <button class="custom_button" id="BtnCartBuy">CHECKOUT</button>
+            </form>
+        </div>
+    </div>
+    <f-footer></f-footer>
+    <script src="../components.js"></script>
+    <script src="../app.js"></script>
+    <script src="cart.js"></script>
+ </body>
+ </html>

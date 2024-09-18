@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Love Music Festival</title>
+   <link rel="stylesheet" href="../styles.css"/>
+</head>
+<body>
+    <top-nav-bar></top-nav-bar>
+    <div id="Main_Frame">
+        <div id="Purchase_Block1">
+            <form id="Purchase_Form">
+                <div style="display: flex; justify-content: center; font-family: 'Fascinate Inline', system-ui; font-size: 70px; margin: 20px;">CHECKOUT</div>
+                <li class="Purchase_p" style="margin-top: 6%; font-size: 40px;">The ticket will be sent via email after the payment is confirmed.</li>
+
+                <p class="Purchase_p" style="font-size: 35px;">E-Mail</p>
+                <input class="input_field" id="InEmail" placeholder="Enter Your E-Mail"></input>
+
+                <p class="Purchase_p" style="font-size: 35px;">Choose your pay options</p>
+
+                <select class="form_control" id="Purchase_PayOptions" name="Purchase_PayOptions">
+                    <option value="0" selected></option> <!-- Default Setting -->
+                    <option value="1">Credit Card</option> 
+                    <option value="2">Crypto</option>
+                </select>
+
+                <div id="Purchase_Option"></div>
+                <p class="Purchase_p" id="Purchase_Total"></p>
+                <button class="custom_button" id="Purchase_Pay">PAY NOW</button>
+            </form>
+        </div>
+   </div>
+   <f-footer></f-footer>
+   <!-- <footer></footer> -->
+   <script src="../components.js"></script>
+   <script src="../app.js"></script>
+   <script src="puchase.js"></script>
+</body>
+</html>
