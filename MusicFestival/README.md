@@ -1,7 +1,7 @@
 # Love Music Festival
 <div align="center">
-    <img src="Common/Image/README/README1.png" alt="Title!" height="136" />
-</h1>
+    <img src="Common/Image/README/README1.png" alt="Title!" height="450" width="auto"/>
+</div>
 
 This webpage was written by JavaScript, HTML, and CSS. It includes basic layout and a simple shopping system workflow, making it an ideal reference template for beginners just starting to learn web development.
 
