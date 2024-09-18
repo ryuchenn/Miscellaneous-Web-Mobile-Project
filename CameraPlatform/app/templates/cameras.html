@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block cameras %}
+    <style>
+        .product {
+            width: 300px; 
+            height: 400px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between; 
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box; 
+        }
+
+        .product img {
+            width: 80%; 
+            height: 50%; 
+        }
+
+        .product h3, .product p, .product button {
+            text-align: center;
+            width: 100%; 
+        }
+
+        .product button {
+            width: 100%; 
+            padding: 10px 0; 
+            box-sizing: border-box; 
+            border: 1px solid #000; 
+            background-color: #fff; 
+            cursor: pointer; 
+        }
+
+    </style>
+   <section>
+    {% for item in items %}
+        <div class="product">
+            <img src="{{ item.product_picture }}" alt="">
+            <h3>{{ item.name }}</h3>
+            <p>${{ item.price }}</p>
+            <button><a href="/add-to-cart/{{ item.id }}">Add</a></button>
+        </div>
+    {% endfor %}
+    </section>
+{% endblock %}

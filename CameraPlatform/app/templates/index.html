@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block home %}
+<style>
+  /* 將圖像最大寬度設定為300像素 */
+  img {
+      max-width: 300px;
+      height: auto;
+  }
+
+  .product {
+    display: grid; 
+    place-items: center;
+    padding: 10px;
+  }
+
+  .product img {
+        width: 25%; /* 确保按鈕宽度与卡片相符 */
+        padding: 10px 0; /* 给予一些垂直填充 */
+        box-sizing: border-box; /* 包括padding在内的总宽度 */
+        background-color: #fff; /* 按钮的背景颜色 */
+        cursor: pointer; /* 鼠标悬停时的指针样式 */
+  }
+
+  
+
+</style>
+
+<section>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img src="public/images/home/ad1.webp" class="d-block w-100" style="max-width: 1200px; height: auto;" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="public/images/home/ad2.webp" class="d-block w-100" style="max-width: 1200px; height: auto;" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="public/images/home/ad3.webp" class="d-block w-100" style="max-width: 1200px; height: auto;" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="product">
+      <img src="public/images/layout/camera.png" alt="Camera">
+      <a href="/cameras">
+        <button>SHOP CAMERAS</button>
+      </a>
+    </div>
+    <div class="product">
+        <img src="public/images/layout/lense.png" alt="Lense">
+        <a href="/lenses">
+          <button>SHOP LENSES</button>
+        </a>
+    </div>
+    <div class="product">
+        <img src="public/images/layout/accessories.png" alt="Accories" >
+        <a href="/accessories">
+          <button>SHOP ACCESSORIES</button>
+        </a>
+    </div>
+</section>
+{% endblock %}

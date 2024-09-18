@@ -1,0 +1,72 @@
+
+照著流程安裝
+
+https://docs.docker.com/engine/install/debian/
+
+
+1. 裝到ssh 虛擬主機上
+
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+
+2.
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+3. Test
+
+sudo docker run hello-world
+
+4. Sudo=super user
+sudo docker images
+
+
+5. 從docker hub pull 資料回來
+sudo docker pull ryuchenn/camera:latest
+sudo docker images
+
+6.run docker  (ryuchenn/camera:latest 為docker hub上的 {ID/專案名稱} )
+sudo docker run --name project -d --restart on-failure -p 5000:5000 ryuchenn/camera:latest
+
+
+7. 查詢啟用狀態
+sudo docker ps
+
+8.確認啟用後
+到gcp 的VM instance(compute engine) ，複製外部IP，並加上 port號
+ex: http://104.198.226.70:5000/
+
+
+9. 疑問
+怎麼停用、換版
+
+========換版流程
+1. push 到docker
+docker push ryuchenn/camera:latest
+
+2.刪除GCP 舊有 instance
+sudo docker stop project
+sudo docker rm project
+
+3. pull 
+sudo docker pull ryuchenn/camera:latest
+
+
+========簡易build docker 流程
+1. build
+docker build -t ryuchenn/camera .
+
+2. 在本地測試
+docker run -p 5000:5000 -d ryuchenn/camera
+
+3. push
+docker push ryuchenn/camera:tagname

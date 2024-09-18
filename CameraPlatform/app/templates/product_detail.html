@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block product_detail %}
+<style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .product-section {
+      text-align: center; /* Centers the content of the section */
+    }
+    .product-image {
+      max-width: 100%;
+      height: auto;
+    }
+    .product-price,
+    .product-description {
+      margin: 0 auto; /* Additional centering for specific paragraphs if needed */
+      display: block;
+    }
+    /* Style for the "Customers also viewed" section */
+    .also-viewed {
+      text-align: center;
+      margin-top: 50px; /* Adjust as needed for spacing */
+      margin-bottom: 150px;
+    }
+    .also-viewed h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    .also-viewed-items {
+      display: flex;
+      justify-content: center;
+      gap: 10px; /* Adjust the space between items */
+    }
+    .also-viewed-item {
+      flex-basis: 20%; /* Adjust based on the number of items */
+      text-align: center;
+    }
+</style>
+
+<section class="product-section">
+    <h1>{{ product.name }}</h1>
+    <img class="product-image" src="{{ url_for('static', filename=product.product_picture) }}" alt="Product Image">
+    
+    <p class="product-price">Price: ${{ product.price }}</p>
+    <p class="product-description">Description: {{ product.description }}</p>
+
+    <br><br><h1>Price Chart</h1>
+    <img src="data:image/png;base64,{{ plot_url }}" alt="Price Trend">
+</section>
+
+<section class="also-viewed">
+    <hr>
+    <h2>Customers who viewed this item also viewed</h2>
+    <div class="also-viewed-items">
+
+      <div class="also-viewed-item">
+        <!-- <img src="path_to_product_image" alt="Product Image"> -->
+        <!-- <p>Product Name</p> -->
+        <!-- <p>Price</p> -->
+      </div>
+    </div>
+</section>
+<br><br><br><br><br><br><br><br><br><br>
+{% endblock %}

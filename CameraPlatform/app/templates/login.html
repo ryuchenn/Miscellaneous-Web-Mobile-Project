@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block login %}
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        
+        .login {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .register {
+            flex: 1;
+        }
+    </style>
+    <section>
+        
+        <div class="container">
+            <div class="login">
+                <h1>Login</h1>
+                <form method="POST">
+                    {{ form.hidden_tag() }}
+                    {{ form.username.label }} <br>
+                    {{ form.username(size=20) }} <br>
+                    {{ form.password.label }} <br>
+                    {{ form.password(size=20) }} <br>
+                    {{ form.remember }} {{ form.remember.label }} <br>
+                    {{ form.login() }}
+                </form>
+                <a href="/register">
+                    Rigister
+                </a>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
