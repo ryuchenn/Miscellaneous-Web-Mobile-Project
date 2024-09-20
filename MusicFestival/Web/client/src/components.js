@@ -135,8 +135,8 @@ customElements.define("top-nav-bar", TopNavBar);
 customElements.define("f-footer", FFooter);
 customElements.define('language-changer', LanguageChanger);
 
+let currentIndex = 0; 
 function showNextImage() {
-    let currentIndex = 0; 
     const images = document.querySelectorAll('.slideshow_images'); 
     const totalImages = images.length;
 

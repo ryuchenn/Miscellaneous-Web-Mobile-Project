@@ -15,11 +15,11 @@ This webpage was written by JavaScript, HTML, and CSS. It includes basic layout 
 - [x] CSS Layout in web
 - [ ] CSS Layout in mobile
 - [ ] CSS Layout in tablet
+- [ ] Change to React.js format
 - [ ] Home Gallery Loop Player
 - [ ] Language Changer
-- [ ] Home Gallery Loop Player
 - [ ] E-Mail Sending
-- [ ] Change to React.js format
 - [ ] Pay with Paypal
 - [ ] Account Login
+- [ ] Database
 

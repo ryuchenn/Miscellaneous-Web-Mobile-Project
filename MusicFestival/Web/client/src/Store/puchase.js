@@ -56,23 +56,21 @@ function BtnPay(){
             alert("Fill Your Card PIN")
             return;
         }
-        
-
-        if(receipt.length>0){
-            const targetUrl = `receipt.html?ticket=${encodeURIComponent(parseFloat(receipt[0].ticket))}&quantity=${encodeURIComponent(parseFloat(receipt[0].quantity))}&coupon=${encodeURIComponent(receipt[0].coupon)}&Total=${encodeURIComponent(parseFloat(receipt[0].Total))}&USDC=${encodeURIComponent(parseFloat(receipt[0].USDC))}&BTC=${encodeURIComponent(parseFloat(receipt[0].BTC))}`;
-            window.location.href = targetUrl;
-        }
+        Next_Page()
     }
     else if (selectedPay == 2){
         if(document.getElementById('InCryptoAddress').value == ""){
             alert("Fill Your Crypto Address");
             return;
         }
-        
-        if(receipt.length>0){
-            const targetUrl = `receipt.html?ticket=${encodeURIComponent(parseFloat(receipt[0].ticket))}&quantity=${encodeURIComponent(parseFloat(receipt[0].quantity))}&coupon=${encodeURIComponent(receipt[0].coupon)}&Total=${encodeURIComponent(parseFloat(receipt[0].Total))}&USDC=${encodeURIComponent(parseFloat(receipt[0].USDC))}&BTC=${encodeURIComponent(parseFloat(receipt[0].BTC))}`;
-            window.location.href = targetUrl;
-        }
+        Next_Page()
+    }
+}
+
+function Next_Page(){
+    if(receipt.length>0){
+        const targetUrl = `receipt.html?ticket=${encodeURIComponent(parseFloat(receipt[0].ticket))}&quantity=${encodeURIComponent(parseFloat(receipt[0].quantity))}&coupon=${encodeURIComponent(receipt[0].coupon)}&Total=${encodeURIComponent(parseFloat(receipt[0].Total))}&USDC=${encodeURIComponent(parseFloat(receipt[0].USDC))}&BTC=${encodeURIComponent(parseFloat(receipt[0].BTC))}`;
+        window.location.href = targetUrl;
     }
 }
 
