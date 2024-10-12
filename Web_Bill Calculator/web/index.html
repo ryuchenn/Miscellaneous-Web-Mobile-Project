@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Electricity Bill Calculator</h1>
+        <p>Enter kwh used during on-peak hours</p>
+        <input id="InOnPeak" placeholder="Enter on-peak hours"></input>
+        <p>Enter kwh used during on-peak hours</p>
+        <input id="InOffPeak" placeholder="Enter off-peak hours"></input>
+        <p>Province of residence</p>
+        <input id="InProvince" placeholder="Enter province (British Columbia, Ontario)"></input>
+        <button id="BtnCalculate">Calculate</button>
+    </div>
+    <div class="BtnOutput" style="display: none;">
+        <div class="BtnOutBlock1">
+            <div id="BtnBlock1_Detail1">
+                <a>ON PEAK USAGE</a>
+                <h1 id="BtnBlock1_Fee1"></h1>
+                <a id="BtnBlock1_kwH1"></a>
+            </div>
+            <div id="BtnBlock1_Detail2">
+                <a>OFF PEAK USAGE</a>
+                <h1 id="BtnBlock1_Fee2"></h1>
+                <a id="BtnBlock1_kwH2"></a>
+            </div>
+        </div>
+        <div class="BtnOutBlock2">
+            <a id="BtnBlock2_Total"></a>
+            <a id="BtnBlock2_Tax"></a>
+            <a id="BtnBlock2_Charge"></a>
+        </div>
+        <div class="BtnOutBlock3">
+            <a>TOTAL TO PAY</a>
+            <a id="BtnBlock3_Fee"></a>
+        </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
+
