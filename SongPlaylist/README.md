@@ -1,6 +1,6 @@
 # OrderFlowManager
 <div align="center">
-    <img src="public/other/basic_structure/Result.png" alt=“Img” />
+    <img src="public/Result.png" alt=“Img” />
 </div>
 ## Introduction
 Add the songs like Spotify. Using EJS, Node.js, MongoDB.
