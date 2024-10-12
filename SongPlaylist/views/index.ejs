@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <h2 style="font-family: 'Advent Pro', sans-serif; font-size: 80px; text-align: center;">GBC Music</h2>
+
+    <div class="container">
+        <!-- All Songs Section -->
+        <div class="all-songs">
+            <h2 style="font-family: 'Pacifico', cursive; font-size: 40px; text-align: center;">All Songs</h2>
+                <% songs.forEach(song => { %>
+                    <div class="song-layout">
+                        <img src="<%= song.Image %>" alt="<%= song.Title %>" width="50">
+                        <div class="song-layout2">
+                            <strong><%= song.Title %></strong> <br>
+                            <strong><%= song.Artist %></strong> 
+                            <form action="/add-to-playlist/<%= song._id %>" method="POST">
+                                <button class="custom_button" type="submit">Add to List</button>
+                            </form>
+                        </div>
+                    </div>
+                <% }) %>
+        </div>
+
+        <!-- Playlist Section -->
+        <div class="my-playlist">
+           <h2 style="font-family: 'Pacifico', cursive; font-size: 40px; text-align: center;">My Playlist</h2>
+           <% if (playlist.length === 0) { %>
+               <p>You have no songs on the playlist!</p>
+           <% } else { %>
+                   <% playlist.forEach(entry => { %>
+                       <div class="playlist-layout">
+                           <img src="<%= entry.Image %>" alt="<%= entry.Title %>" width="50"></img>
+                           <div class="playlist-layout2">
+                               <strong> <%= entry.Title %></strong><br>
+                               <strong> <%= entry.Artist %></strong> 
+                               <form action="/remove-from-playlist/<%= entry._id %>" method="POST">
+                                   <button class="custom_remove_button"  type="submit">Remove</button>
+                               </form>
+                           </div>
+                        </div>
+                   <% }) %>
+            <% } %>
+        </div>
+      
+        <!-- Add Song Section -->
+        <div class="add-song">
+            <h2 style="font-family: 'Pacifico', cursive; font-size: 40px; text-align: center;" >Add Song to Website</h2>
+            <form action="/add-song" method="POST">
+                <label for="songName">Song Name</label>
+                <input type="text" name="title" id="songName" required><br>
+                <label for="songArtist">Song Artist</label>
+                <input type="text" name="artist" id="songArtist" required><br>
+                <label for="imageUrl">Song Image</label>
+                <input type="url" name="image" id="imageUrl" required><br>
+                <button class="custom_button" type="submit">Add Song</button>
+            </form>
+        </div>
+         
+    </div>
+</body>
+</html>

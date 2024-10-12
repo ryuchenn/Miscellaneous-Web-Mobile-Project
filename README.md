@@ -1,4 +1,9 @@
-# Full Stack Project Demonstration
-This repository had diierent types of project. 
+# Miscellaneous Project
+This repositories stores projects I have done in the past, using Javascript, Python, Node.js, and HTML. Free feel can click into the folder and there will be its own README.MD file.
+This project will include projects for Python, Javascript, C#, Kotlin, and Swift...etc.
 
-It comes with different programming language like Python, Javascript, C#. Also, this repository has the cross-platform project like Love Music Festival Project. That project will be developed using Web, Android, and iOS.
+- CameraPlatform - Python, Flask
+- MusicFestival - HTML, CSS, Javascript
+- Bill Calculator - HTML, CSS, Javascript
+- RestfulAPI - Node.js, MongoDB
+- SongPlaylist - EJS, Node.js, MongoDB

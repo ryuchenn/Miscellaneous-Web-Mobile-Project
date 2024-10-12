@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* font-family: "Pacifico", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap'); /* font-family: "Advent Pro", sans-serif; */
+
+html{
+    background: linear-gradient(to bottom, #e8e8e8, #292929);
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+/* All Button Element */
+.custom_button {
+    background-color: #2e99e5; 
+    color: #ffffff; 
+    border: none; 
+    padding: 15px 30px; 
+    margin: 20px; 
+    font-size: 18px; 
+    font-family: 'Roboto', sans-serif; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+.custom_button:hover {
+    background-color: #f3c2c2; 
+}
+
+.custom_remove_button {
+    background-color: #ff9d00; 
+    color: #ffffff; 
+    border: none; 
+    padding: 15px 30px; 
+    margin: 20px; 
+    font-size: 18px; 
+    font-family: 'Roboto', sans-serif; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+.custom_remove_button:hover {
+    background-color: #ff2200; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.all-songs, .my-playlist, .add-song  {
+    width: 30%;
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.song-layout, .playlist-layout{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin-bottom: 10px;
+    align-items: center;
+    padding-left: 20px;
+}
+.song-layout2, .playlist-layout2{
+    flex-direction: column;
+    text-align: center;
+}
+
+.song-layout img, .playlist-layout img{
+    width: 175px;
+    height: 175px;
+}
+.song-layout strong, .playlist-layout strong{
+    font-size: 18px;
+}
+
+/* Add song */
+.add-song select, .add-song input
+{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.add-song form{
+    padding-left: 15%;
+}
+
+.add-song form button{
+    margin-left: 20%;
+}
