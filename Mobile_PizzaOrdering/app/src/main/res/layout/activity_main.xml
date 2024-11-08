@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:background="#FFEB3B"
+    >
+
+    <TextView
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Order Screen"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hawaiian pizza"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="218dp"
+        android:contentDescription="Pizza Image"
+        android:src="@drawable/pizza_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What type of pizza?"
+        android:textSize="24sp"/>
+
+    <RadioGroup
+        android:id="@+id/pizzaTypeGroup"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/meatRadio"
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:text="Meat ($6.70 per slice)" />
+
+        <RadioButton
+            android:id="@+id/vegetarianRadio"
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:text="Vegetarian ($4.25 per slice)" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of slices"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/sliceCountInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number of Slices"
+        android:inputType="number"/>
+
+    <Switch
+        android:id="@+id/wholePizzaSwitch"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:text="Entire Pizza? (8 slices)" />
+
+    <Switch
+        android:id="@+id/deliverySwitch"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:text="Need delivery? (+$5.25)" />
+
+<!--    -->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center_vertical">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Need delivery? (+$10.50)"-->
+<!--            android:textSize="16sp"/>-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/deliverySwitch"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--    </LinearLayout>-->
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Order"/>
+</LinearLayout>
