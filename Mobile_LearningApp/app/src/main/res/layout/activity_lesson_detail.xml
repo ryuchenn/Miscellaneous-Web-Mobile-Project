@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LessonDetail">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingVertical="15sp"
+            android:paddingStart="20sp"
+            android:paddingEnd="20sp"
+            android:background="#FA529AAF">
+            <TextView
+                android:id="@+id/textOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="16sp"
+                android:fontFamily="sans-serif-light"
+                android:text="Full React Tutorial"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:id="@+id/watch"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="32sp"
+                android:paddingStart="10sp"
+                android:paddingEnd="10sp"
+                android:gravity="center"
+                android:backgroundTint="@color/darkBlue"
+                android:background="@drawable/rounded_small">
+                <ImageView
+                    android:layout_width="15sp"
+                    android:layout_height="15sp"
+                    android:layout_marginRight="6sp"
+                    android:gravity="center"
+                    android:src="@android:drawable/ic_media_play" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Watch"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:text="Name"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="23sp"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:id="@+id/length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:text="Length"
+            android:textSize="13sp"
+            android:textColor="@color/dark" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:text="Description"
+            android:textSize="15sp"
+            android:textColor="@color/darkBlue"
+            android:lineHeight="23sp"
+            android:letterSpacing=".06" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/complete"
+            style="@style/Button_Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mark Complete" />
+    </LinearLayout>
+
+</LinearLayout>
