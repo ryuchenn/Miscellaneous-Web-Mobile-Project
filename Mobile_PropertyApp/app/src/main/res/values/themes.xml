@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base theme style for your app -->
+    <style name="Base.Theme.PropertyApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+
+        <item name="buttonStyle">@style/ButtonDangerOutline</item>
+    </style>
+
+    <style name="Theme.PropertyApp" parent="Base.Theme.PropertyApp">
+        <!-- Optionally customize app-wide settings here -->
+    </style>
+
+    <style name="ButtonDangerOutline" parent="ThemeOverlay.Material3.Button">
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:paddingTop">18dp</item>
+        <item name="android:paddingBottom">18dp</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="ButtonPrimary" parent="ThemeOverlay.Material3.Button">
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:paddingTop">18dp</item>
+        <item name="android:paddingBottom">18dp</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="ShapeRoundedTopSmall" parent="ShapeAppearance.Material3.Corner.Full">
+        <item name="cornerSizeTopLeft">10dp</item>
+        <item name="cornerSizeTopRight">10dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="TextInputDefault">
+        <item name="android:background">@drawable/rounded_input</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="SpinnerDefault">
+        <item name="android:background">@drawable/rounded_spinner</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="PopupMenu" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:dropDownHorizontalOffset">-4dp</item>
+        <item name="android:dropDownVerticalOffset">10dp</item>
+    </style>
+</resources>
