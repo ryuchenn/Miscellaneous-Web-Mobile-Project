@@ -2,8 +2,21 @@
 This repositories stores projects I have done in the past, using Javascript, Python, Node.js, and HTML. Free feel can click into the folder and there will be its own README.MD file.
 This project will include projects for Python, Javascript, C#, Kotlin, and Swift...etc.
 
-- CameraPlatform - Python, Flask
-- MusicFestival - HTML, CSS, Javascript
-- Bill Calculator - HTML, CSS, Javascript
-- RestfulAPI - Node.js, MongoDB
-- SongPlaylist - EJS, Node.js, MongoDB
+
+## Web
+- HTML, CSS, Javascript - MusicFestival, Bill Calculator
+- EJS, Node.js, MongoDB - SongPlaylist
+
+## Mobile
+- Swift - NatureWalk
+- Firebase, Kotlin - BicycleMap
+- Kotlin - LearningApp
+- Kotlin - PropertyApp
+
+## Python
+- Python, Flask - CameraPlatform
+
+## Database, Backend
+- MongoDB, Node.js - Web_RestfulAPI 
+- MongoDB, Node.js, EJS - SongPlaylist
+- Firebase, Kotlin - BicycleMap
