@@ -9,6 +9,7 @@ This project will include projects for Python, Javascript, C#, Kotlin, and Swift
 
 ## Mobile
 - Swift - NatureWalk
+- Firebase, Swift - Plants
 - Firebase, Kotlin - BicycleMap
 - Kotlin - LearningApp
 - Kotlin - PropertyApp
@@ -20,3 +21,4 @@ This project will include projects for Python, Javascript, C#, Kotlin, and Swift
 - MongoDB, Node.js - Web_RestfulAPI 
 - MongoDB, Node.js, EJS - SongPlaylist
 - Firebase, Kotlin - BicycleMap
+- Firebase, Swift - Plants
