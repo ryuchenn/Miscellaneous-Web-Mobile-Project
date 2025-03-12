@@ -4,7 +4,7 @@
 Using Swift, Firebase, API, Apple Map. City Bike Explorer is an iOS application built with SwiftUI that displays city bike networks around the world. Users can view a list of networks, see their locations on a map, and view detailed information.
 
 <div align="center">
-    <img src="git/1.png" alt="Home"/>
+    <img src="git/1.png" alt="Home" width="400">
 </div>
 
 ## Guide
