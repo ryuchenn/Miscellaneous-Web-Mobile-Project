@@ -19,7 +19,7 @@ struct BikeMapView: View {
     )
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 // Annotations on the map
                 Map(coordinateRegion: $region, annotationItems: netController.nets) { net in
@@ -64,9 +64,11 @@ struct BikeMapView: View {
                     }
                 }
             }
+            .navigationBarHidden(true)
             .onAppear {
                 netController.fetch()
             }
+            
         }
     }
 }
