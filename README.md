@@ -4,17 +4,19 @@ This project will include projects for Python, Javascript, C#, Kotlin, and Swift
 
 
 ## Web
-- HTML, CSS, Javascript - MusicFestival, Bill Calculator
+- HTML, CSS, Javascript - MusicFestival
+- HTML, CSS, Javascript - Bill Calculator
 - EJS, Node.js, MongoDB - SongPlaylist
 
 ## Mobile
 - Swift - NatureWalk
+- Firebase, Swift - 4Rent
 - Firebase, Swift, API - CityBike
 - Firebase, Swift - Plants
 - Firebase, Kotlin - BicycleMap
 - Kotlin - PropertyApp
 - Kotlin - LearningApp
-
+- React Native - BookRoom
 
 ## Python
 - Python, Flask - CameraPlatform
@@ -23,5 +25,6 @@ This project will include projects for Python, Javascript, C#, Kotlin, and Swift
 - MongoDB, Node.js - Web_RestfulAPI 
 - MongoDB, Node.js, EJS - SongPlaylist
 - Firebase, Kotlin - BicycleMap
+- Firebase, Swift - 4Rent
 - Firebase, Swift, API - CityBike
 - Firebase, Swift - Plants
