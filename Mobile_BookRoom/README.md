@@ -1,12 +1,17 @@
 # Mobile Room Booking App
 - [Video](https://youtube.com/shorts/OOI7flT5zHg)
-- [Quick Demo](https://youtube.com/shorts/OOI7flT5zHg)
+- [Quick Demo](https://snack.expo.dev/@git/github.com/ryuchenn/Miscellaneous-Web-Mobile-Project:Mobile_BookRoom)
 - This is a cross-platform mobile application built with **React Native** and **Expo**. The app demonstrates multi-screen functionality with user authentication, room booking, and real-time capacity updates.
 
 <div align="center">
     <img src="git/Home.png" alt="Home"/>
 </div>
 
+# Guide
+```
+username=admin
+password=admin
+```
 
 ## Features
 
